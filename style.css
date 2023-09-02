@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    width: 32rem;
+    margin: auto;
+}
+
+
+.menu ul{
+    display: flex;
+    justify-content: space-around;
+    gap: 1px;
+    list-style: none;
+    margin: 1.5rem;
+}
+
+.menu a{
+    text-decoration: none;
+    color: #FFFF;
+}
+
+.menu li{
+    padding: .5rem;
+    background: rgb(42, 42, 100);
+    border-radius: 1rem;
+}
+
+main{
+    padding-top: 7.5rem;
+}
+
+.name,
+.about-me{
+    text-align: center;
+    padding: 1.2rem;
+}
+
+.name h2{
+    font-size: 3.5rem;
+}
+
+.line{
+    border: 1px solid black;
+    width: 20rem;
+    margin: -4px auto;
+}
+
+.name span{
+    font-size: 2.9rem;
+}
+
+.logo-svg{
+    margin: 1.5rem auto 20rem auto;
+    
+}
+
+/* about-me */
+
+.about-me{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 8px;
+}
+
+/* projects */
+
+.projects{
+    padding: 1.5rem;
+}
+
+.project{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-bottom: 1.9rem;
+    border-radius: 5px;
+    padding: 1.5rem;
+}
+
+.project h3{
+    text-align: center;
+    color: rgb(42, 42, 100);
+}
+
+.project img,
+.project p{
+    width: 100%;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.project ul{
+    list-style: none;
+    display: flex;
+    gap: 5px;
+}
+
+.project a img{
+    height: 30px;
+    width: 30px;
+}
+
+

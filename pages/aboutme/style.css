@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    background: #010129;
+    font-family: 'Cardo', serif;
+    font-size: .9rem;
+}
+
+/*main{
+    height: 100vh;
+    background-image: url(../../img/fundo\ ok.PNG);
+    background-repeat: repeat-x;
+    margin-top: -60px;
+    
+}
+*/
+
+.box{
+    background: #ebecf0;
+    height: 29rem;
+    width: 19rem;
+    border-radius: 1.5rem;
+    margin: 10rem auto;
+}
+
+.box img{
+    height: 2.6rem;
+    width: 3.6rem;
+}
+
+.head{
+    display: flex;
+}
