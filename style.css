@@ -13,6 +13,8 @@ body{
     font-size: 1.6rem;
     width: 32rem;
     margin: auto;
+
+    --Bg-menu-color: rgb(42, 42, 100);
 }
 
 
@@ -31,7 +33,7 @@ body{
 
 .menu li{
     padding: .5rem;
-    background: rgb(42, 42, 100);
+    background: var(--Bg-menu-color);
     border-radius: 1rem;
 }
 
@@ -86,7 +88,7 @@ main{
 
 .project h3{
     text-align: center;
-    color: rgb(42, 42, 100);
+    color: var(--Bg-menu-color);
 }
 
 .project img,
