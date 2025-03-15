@@ -1,25 +1,45 @@
+import { Link } from "react-router-dom";
+import Projetos from "./Components/Projetos";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+
 const App = () => {
   return (
     <div className="bg-black text-white font-sans min-h-screen w-full flex flex-col items-center">
       {/* Header */}
       <header className="w-full max-w-6xl flex justify-between items-center p-6">
-        <h1 className="text-xl font-bold">adamkeyes</h1>
+        <h1 className="text-xl font-bold">wefwwefwe</h1>
         <div className="flex space-x-4">
-          <i className="fab fa-github"></i>
-          <i className="fab fa-linkedin"></i>
-          <i className="fab fa-twitter"></i>
+          <Link
+            to={"https://github.com/pachecx"}
+            target="_blank"
+            className="fab fa-github cursor-pointer"
+          >
+            <FaGithub />
+          </Link>
+          <Link
+            to={"https://www.linkedin.com/in/matheus-pacheco-cruz/"}
+            target="_blank"
+            className="fab fa-linkedin cursor-pointer"
+          >
+            <FaLinkedin />
+          </Link>
         </div>
       </header>
 
       {/* Hero Section */}
       <section className="w-full max-w-6xl text-center p-12 min-h-screen flex flex-col justify-center">
         <h2 className="text-5xl md:text-6xl font-bold leading-tight">
-          Nice to meet you! <br /> I’m <span className="text-green-500">Matheus Pacheco</span>.
+          Nice to meet you! <br /> I’m{" "}
+          <span className="text-green-500">Matheus Pacheco</span>.
         </h2>
         <p className="mt-4 text-gray-400 max-w-md mx-auto">
-           I'm a front-end developer passionate about building accessible web apps that users love.
+          I'm a front-end developer passionate about building accessible web
+          apps that users love.
         </p>
-        <button className="mt-6 border-b-2 border-green-500 hover:text-green-500">CONTACT ME</button>
+        <button className="mt-6 border-b-2 border-green-500 hover:text-green-500 cursor-pointer">
+          CONTACT ME
+        </button>
       </section>
 
       {/* Skills */}
@@ -34,7 +54,6 @@ const App = () => {
           { skill: "Sass", experience: "1 Years Experience" },
           { skill: "Tailwind", experience: "0.6 Years Experience" },
           { skill: "Java", experience: "0.3 Years Experience" },
-
         ].map((item, index) => (
           <div key={index}>
             <h3 className="text-xl font-bold">{item.skill}</h3>
@@ -62,29 +81,61 @@ const App = () => {
             </div>
           ))}
         </div>
+
+        <Projetos
+          nome="TIP"
+          tecnologias1="GO"
+          tecnologias2="Java"
+          tecnologias3="Css"
+        />
       </section>
 
       {/* Contact */}
       <section className="w-full max-w-6xl p-12 text-center min-h-screen flex flex-col justify-center">
         <h2 className="text-4xl font-bold">Contact</h2>
         <p className="text-gray-400 max-w-md mx-auto mt-4">
-          I would love to hear about your project and how I could help. Please fill in the form, and I’ll get back to you as soon as possible.
+          I would love to hear about your project and how I could help. Please
+          fill in the form, and I’ll get back to you as soon as possible.
         </p>
         <form className="mt-6 space-y-4 max-w-md mx-auto">
-          <input type="text" placeholder="NAME" className="w-full bg-black border-b-2 border-gray-500 p-2 focus:outline-none focus:border-green-500" />
-          <input type="email" placeholder="EMAIL" className="w-full bg-black border-b-2 border-gray-500 p-2 focus:outline-none focus:border-green-500" />
-          <textarea placeholder="MESSAGE" className="w-full bg-black border-b-2 border-gray-500 p-2 focus:outline-none focus:border-green-500"></textarea>
-          <button className="border-b-2 border-green-500 hover:text-green-500">SEND MESSAGE</button>
+          <input
+            type="text"
+            placeholder="NAME"
+            className="w-full bg-black border-b-2 border-gray-500 p-2 focus:outline-none focus:border-green-500"
+          />
+          <input
+            type="email"
+            placeholder="EMAIL"
+            className="w-full bg-black border-b-2 border-gray-500 p-2 focus:outline-none focus:border-green-500"
+          />
+          <textarea
+            placeholder="MESSAGE"
+            className="w-full bg-black border-b-2 border-gray-500 p-2 focus:outline-none focus:border-green-500"
+          ></textarea>
+          <button className="border-b-2 border-green-500 hover:text-green-500">
+            SEND MESSAGE
+          </button>
         </form>
       </section>
 
       {/* Footer */}
       <footer className="w-full max-w-6xl p-6 flex justify-between items-center">
-        <h1 className="text-xl font-bold">adamkeyes</h1>
+        <h1 className="text-xl font-bold">wefwefwef</h1>
         <div className="flex space-x-4">
-          <i className="fab fa-github"></i>
-          <i className="fab fa-linkedin"></i>
-          <i className="fab fa-twitter"></i>
+          <Link
+            to={"https://github.com/pachecx"}
+            target="_blank"
+            className="fab fa-github cursor-pointer"
+          >
+            <FaGithub />
+          </Link>
+          <Link
+            to={"https://www.linkedin.com/in/matheus-pacheco-cruz/"}
+            target="_blank"
+            className="fab fa-linkedin cursor-pointer"
+          >
+            <FaLinkedin />
+          </Link>
         </div>
       </footer>
     </div>
