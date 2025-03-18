@@ -1,11 +1,14 @@
 import { FaGithub } from "react-icons/fa";
-import { RiVercelLine } from "react-icons/ri";
-
+import { Link } from "react-router";
+import { FaGlobeAmericas } from "react-icons/fa";
 interface types {
   nome: string;
   tecnologias1: string;
   tecnologias2: string;
   tecnologias3: string;
+  repositorio: string;
+  deploy: string;
+  Img: string;
 }
 
 const Projetos = ({
@@ -13,18 +16,27 @@ const Projetos = ({
   tecnologias1,
   tecnologias2,
   tecnologias3,
+  repositorio,
+  deploy,
+  Img,
 }: types) => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-6">
+    <div className=" ">
       <div className="bg-gray-800 p-4 rounded-lg">
-        <div className="h-48 bg-gray-600"></div>
+        <div className="h-48 bg-gray-600 overflow-hidden">
+          <img className=" w-full h-full" src={Img} />
+        </div>
         <h3 className="mt-4 text-xl font-bold">{nome}</h3>
         <p className="text-gray-400 mb-1">
           {tecnologias1} | {tecnologias2} | {tecnologias3}
         </p>
         <div className="flex gap-2">
-          <FaGithub />
-          <RiVercelLine />
+          <Link target="_blank" to={`${repositorio}`}>
+            <FaGithub />
+          </Link>
+          <Link target="_blank" to={`${deploy}`}>
+            <FaGlobeAmericas />
+          </Link>
         </div>
       </div>
     </div>

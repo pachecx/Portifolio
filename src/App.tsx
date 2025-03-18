@@ -2,13 +2,15 @@ import { Link } from "react-router-dom";
 import Projetos from "./Components/Projetos";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
+import Img1 from "./assets/image1.png";
+import Img2 from "./assets/image2.png";
 
 const App = () => {
   return (
     <div className="bg-black text-white font-sans min-h-screen w-full flex flex-col items-center">
       {/* Header */}
       <header className="w-full max-w-6xl flex justify-between items-center p-6">
-        <h1 className="text-xl font-bold">wefwwefwe</h1>
+        <div />
         <div className="flex space-x-4">
           <Link
             to={"https://github.com/pachecx"}
@@ -65,7 +67,7 @@ const App = () => {
       {/* Projects */}
       <section className="w-full max-w-6xl p-12 min-h-screen">
         <h2 className="text-4xl font-bold">Projects</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-6">
+        {/* <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-6">
           {[
             "Design Portfolio",
             "E-learning Landing Page",
@@ -80,14 +82,69 @@ const App = () => {
               <p className="text-gray-400">HTML | CSS | JavaScript</p>
             </div>
           ))}
-        </div>
+        </div> */}
+      
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-6">
+        <Projetos
+          nome="teste"
+          tecnologias1="C++"
+          tecnologias2="Html"
+          tecnologias3="Tailwind"
+          repositorio={
+            "https://github.com/pachecx/Card_Interativo?tab=readme-ov-file"
+          }
+          deploy={"https://pachecx.github.io/Card_Interativo/"}
+          Img={Img1}
+        />
 
+<Projetos
+          nome="teste"
+          tecnologias1="C++"
+          tecnologias2="Html"
+          tecnologias3="Tailwind"
+          repositorio={
+            "https://github.com/pachecx/Card_Interativo?tab=readme-ov-file"
+          }
+          deploy={"https://pachecx.github.io/Card_Interativo/"}
+          Img={Img1}
+        />
+
+<Projetos
+          nome="teste"
+          tecnologias1="C++"
+          tecnologias2="Html"
+          tecnologias3="Tailwind"
+          repositorio={
+            "https://github.com/pachecx/Card_Interativo?tab=readme-ov-file"
+          }
+          deploy={"https://pachecx.github.io/Card_Interativo/"}
+          Img={Img1}
+        />
+
+<Projetos
+          nome="teste"
+          tecnologias1="C++"
+          tecnologias2="Html"
+          tecnologias3="Tailwind"
+          repositorio={
+            "https://github.com/pachecx/Card_Interativo?tab=readme-ov-file"
+          }
+          deploy={"https://pachecx.github.io/Card_Interativo/"}
+          Img={Img1}
+        />
         <Projetos
           nome="TIP"
           tecnologias1="GO"
           tecnologias2="Java"
           tecnologias3="Css"
+          repositorio={
+            "https://github.com/pachecx/Card_Interativo?tab=readme-ov-file"
+          }
+          deploy={"https://pachecx.github.io/Card_Interativo/"}
+          Img={Img2}
         />
+      </div>
+        {/* https://pachecx.github.io/Card_Interativo/ */}
       </section>
 
       {/* Contact */}
@@ -112,7 +169,7 @@ const App = () => {
             placeholder="MESSAGE"
             className="w-full bg-black border-b-2 border-gray-500 p-2 focus:outline-none focus:border-green-500"
           ></textarea>
-          <button className="border-b-2 border-green-500 hover:text-green-500">
+          <button className="border-b-2 border-green-500 hover:text-green-500 curso cursor-pointer">
             SEND MESSAGE
           </button>
         </form>
@@ -120,7 +177,7 @@ const App = () => {
 
       {/* Footer */}
       <footer className="w-full max-w-6xl p-6 flex justify-between items-center">
-        <h1 className="text-xl font-bold">wefwefwef</h1>
+        <div />
         <div className="flex space-x-4">
           <Link
             to={"https://github.com/pachecx"}
