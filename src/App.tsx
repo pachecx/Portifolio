@@ -4,6 +4,9 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import Img1 from "./assets/image1.png";
 import Img2 from "./assets/image2.png";
+import Img3 from "./assets/image3.png";
+import Img4 from "./assets/image4.png";
+import Img5 from "./assets/image5.png";
 
 const App = () => {
   return (
@@ -51,11 +54,11 @@ const App = () => {
           { skill: "CSS", experience: "1 Years Experience" },
           { skill: "Javascript", experience: "1 Years Experience" },
           { skill: "Typescript", experience: "1 Years Experience" },
-          { skill: "Accessibility", experience: "1 Years Experience" },
+          { skill: "Git", experience: "1 Years Experience" },
           { skill: "React", experience: "1 Years Experience" },
-          { skill: "Sass", experience: "1 Years Experience" },
+          { skill: "Angular", experience: "0.4 Years Experience" },
           { skill: "Tailwind", experience: "0.6 Years Experience" },
-          { skill: "Java", experience: "0.3 Years Experience" },
+          { skill: "Styled Component", experience: "1 Years Experience" },
         ].map((item, index) => (
           <div key={index}>
             <h3 className="text-xl font-bold">{item.skill}</h3>
@@ -67,83 +70,58 @@ const App = () => {
       {/* Projects */}
       <section className="w-full max-w-6xl p-12 min-h-screen">
         <h2 className="text-4xl font-bold">Projects</h2>
-        {/* <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-6">
-          {[
-            "Design Portfolio",
-            "E-learning Landing Page",
-            "Todo Web App",
-            "Entertainment Web App",
-            "Memory Game",
-            "Art Gallery Showcase",
-          ].map((project, index) => (
-            <div key={index} className="bg-gray-800 p-4 rounded-lg">
-              <div className="h-48 bg-gray-600"></div>
-              <h3 className="mt-4 text-xl font-bold">{project}</h3>
-              <p className="text-gray-400">HTML | CSS | JavaScript</p>
-            </div>
-          ))}
-        </div> */}
-      
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-6">
-        <Projetos
-          nome="teste"
-          tecnologias1="C++"
-          tecnologias2="Html"
-          tecnologias3="Tailwind"
-          repositorio={
-            "https://github.com/pachecx/Card_Interativo?tab=readme-ov-file"
-          }
-          deploy={"https://pachecx.github.io/Card_Interativo/"}
-          Img={Img1}
-        />
 
-<Projetos
-          nome="teste"
-          tecnologias1="C++"
-          tecnologias2="Html"
-          tecnologias3="Tailwind"
-          repositorio={
-            "https://github.com/pachecx/Card_Interativo?tab=readme-ov-file"
-          }
-          deploy={"https://pachecx.github.io/Card_Interativo/"}
-          Img={Img1}
-        />
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-6">
+          <Projetos
+            nome=" Card_Interativo"
+            tecnologias1="React.js"
+            tecnologias2=" TypeScript"
+            tecnologias3="Zod"
+            repositorio={"https://github.com/pachecx/Card_Interativo"}
+            deploy={"https://pachecx.github.io/Card_Interativo/"}
+            Img={Img1}
+          />
 
-<Projetos
-          nome="teste"
-          tecnologias1="C++"
-          tecnologias2="Html"
-          tecnologias3="Tailwind"
-          repositorio={
-            "https://github.com/pachecx/Card_Interativo?tab=readme-ov-file"
-          }
-          deploy={"https://pachecx.github.io/Card_Interativo/"}
-          Img={Img1}
-        />
+          <Projetos
+            nome="Calculadora_de_Gorjeta"
+            tecnologias1="React.js"
+            tecnologias2="JavaScript"
+            tecnologias3="Css"
+            repositorio={"https://github.com/pachecx/Calculadora_de_Gorjeta"}
+            deploy={"https://pachecx.github.io/Calculadora_de_Gorjeta/"}
+            Img={Img2}
+          />
 
-<Projetos
-          nome="teste"
-          tecnologias1="C++"
-          tecnologias2="Html"
-          tecnologias3="Tailwind"
-          repositorio={
-            "https://github.com/pachecx/Card_Interativo?tab=readme-ov-file"
-          }
-          deploy={"https://pachecx.github.io/Card_Interativo/"}
-          Img={Img1}
-        />
-        <Projetos
-          nome="TIP"
-          tecnologias1="GO"
-          tecnologias2="Java"
-          tecnologias3="Css"
-          repositorio={
-            "https://github.com/pachecx/Card_Interativo?tab=readme-ov-file"
-          }
-          deploy={"https://pachecx.github.io/Card_Interativo/"}
-          Img={Img2}
-        />
-      </div>
+          <Projetos
+            nome="IP_Address_Tracker"
+            tecnologias1="React.js"
+            tecnologias2="TypeScript"
+            tecnologias3="Styled-Components"
+            repositorio={"https://github.com/pachecx/IP_Address_Tracker"}
+            deploy={"https://pachecx.github.io/IP_Address_Tracker/"}
+            Img={Img3}
+          />
+
+          <Projetos
+            nome="Advice_Generator"
+            tecnologias1="React.js"
+            tecnologias2="TypeScript"
+            tecnologias3="Styled-Components"
+            repositorio={"https://github.com/pachecx/Advice_Generator"}
+            deploy={"https://pachecx.github.io/Advice_Generator/"}
+            Img={Img4}
+          />
+          <Projetos
+            nome="Autismo_Tech
+"
+            tecnologias1="React.js"
+            tecnologias2="TypeScript"
+            tecnologias3="Css"
+            repositorio={"https://github.com/pachecx/Autismo_Tech"}
+            deploy={"https://autismo-tech.vercel.app/"}
+            Img={Img5}
+          />
+        </div>
         {/* https://pachecx.github.io/Card_Interativo/ */}
       </section>
 
@@ -151,28 +129,30 @@ const App = () => {
       <section className="w-full max-w-6xl p-12 text-center min-h-screen flex flex-col justify-center">
         <h2 className="text-4xl font-bold">Contact</h2>
         <p className="text-gray-400 max-w-md mx-auto mt-4">
-          I would love to hear about your project and how I could help. Please
-          fill in the form, and I’ll get back to you as soon as possible.
+          Feel free to reach out to me through the following channels:
         </p>
-        <form className="mt-6 space-y-4 max-w-md mx-auto">
-          <input
-            type="text"
-            placeholder="NAME"
-            className="w-full bg-black border-b-2 border-gray-500 p-2 focus:outline-none focus:border-green-500"
-          />
-          <input
-            type="email"
-            placeholder="EMAIL"
-            className="w-full bg-black border-b-2 border-gray-500 p-2 focus:outline-none focus:border-green-500"
-          />
-          <textarea
-            placeholder="MESSAGE"
-            className="w-full bg-black border-b-2 border-gray-500 p-2 focus:outline-none focus:border-green-500"
-          ></textarea>
-          <button className="border-b-2 border-green-500 hover:text-green-500 curso cursor-pointer">
-            SEND MESSAGE
-          </button>
-        </form>
+
+        <div className="mt-6 space-y-4 text-lg">
+          <p>
+            Email:{" "}
+            <a
+              href="mailto:seuemail@email.com"
+              className="text-green-500 hover:underline"
+            >
+              pachecx35@gmail.com
+            </a>
+          </p>
+          <p>
+            Phone:{" "}
+            <a
+              href="tel:+5511999999999"
+              className="text-green-500 hover:underline"
+            >
+              +55 (99) 98144-3961
+            </a>
+          </p>
+          <p>Location: Curitiba, Brazil</p>
+        </div>
       </section>
 
       {/* Footer */}

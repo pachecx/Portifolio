@@ -32,10 +32,10 @@ const Projetos = ({
         </p>
         <div className="flex gap-2">
           <Link target="_blank" to={`${repositorio}`}>
-            <FaGithub />
+            <FaGithub className="h-6 w-6" />
           </Link>
           <Link target="_blank" to={`${deploy}`}>
-            <FaGlobeAmericas />
+            <FaGlobeAmericas className="h-6 w-6" />
           </Link>
         </div>
       </div>
